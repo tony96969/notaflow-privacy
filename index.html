@@ -1,24 +1,158 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>NotaFlow - Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – NotaFlow (EN/IT)</title>
+  <meta name="description" content="Privacy Policy for NotaFlow – English and Italian versions." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root { --fg:#222; --bg:#fff; --muted:#666; --card:#f5f5f7; --accent:#4f46e5; }
+    @media (prefers-color-scheme: dark){
+      :root { --fg:#eaeaea; --bg:#0b0b0c; --muted:#9b9b9b; --card:#16161a; --accent:#8b87ff; }
+    }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .wrap { max-width: 900px; margin: 40px auto; padding: 0 20px 64px; }
+    header { display:flex; flex-wrap:wrap; align-items:center; gap:12px; justify-content:space-between; margin-bottom:18px; }
+    h1 { font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem); margin: 0 0 8px; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    .lang-toggle { display:flex; gap:8px; }
+    .lang-toggle button {
+      border: 1px solid var(--muted);
+      background: transparent;
+      color: var(--fg);
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .lang-toggle button.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent), transparent 70%);
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(127,127,127,.2);
+      border-radius: 14px;
+      padding: 20px;
+    }
+    h2 { margin-top: 24px; }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); }
+    .lang { display: none; }
+    .lang.visible { display: block; }
+    footer { margin-top: 28px; font-size: .95rem; color: var(--muted); }
+  </style>
 </head>
 <body>
-  <h1>NotaFlow - Informativa sulla Privacy</h1>
-  <p><strong>Ultimo aggiornamento:</strong> Settembre 2025</p>
-  <p>NotaFlow non raccoglie né archivia alcun dato su server esterni.</p>
-  <ul>
-    <li>Tutte le note e le immagini sono salvate esclusivamente sul dispositivo dell’utente.</li>
-    <li>Se l’utente utilizza “Accedi con Apple”, le informazioni restano salvate solo localmente.</li>
-    <li>L’app non utilizza servizi di tracciamento, pubblicità o analytics.</li>
-    <li>Permessi richiesti:
-      <ul>
-        <li><b>Fotocamera:</b> solo per scattare foto da allegare alle note.</li>
-        <li><b>Libreria Foto:</b> solo per allegare immagini dalle foto personali.</li>
-      </ul>
-    </li>
-  </ul>
-  <p>Per domande: <a href="mailto:antuar7@hotmail.it">antuar7@hotmail.it</a></p>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Privacy Policy – NotaFlow</h1>
+        <div class="meta">Effective / Data di entrata in vigore: <strong id="eff-date">September 22, 2025</strong></div>
+      </div>
+      <div class="lang-toggle" role="tablist" aria-label="Language selector">
+        <button id="btn-en" class="active" role="tab" aria-selected="true" aria-controls="section-en">English</button>
+        <button id="btn-it" role="tab" aria-selected="false" aria-controls="section-it">Italiano</button>
+      </div>
+    </header>
+
+    <!-- ENGLISH -->
+    <section id="section-en" class="lang visible card" lang="en">
+      <p>At <strong>NotaFlow</strong>, we respect your privacy and design our app to minimize data processing.</p>
+
+      <h2>Data Collection</h2>
+      <p>The app does not collect, transmit, or sell personal data to third parties. Your notes and reminders are stored locally on your device. If you enable iCloud synchronization, your data is stored in your personal iCloud account under Apple’s terms.</p>
+
+      <h2>Analytics & Tracking</h2>
+      <p>We do not use third-party analytics, advertising SDKs, or tracking technologies.</p>
+
+      <h2>Subscriptions & Purchases</h2>
+      <p>Payments and subscriptions are processed by Apple via in-app purchase. We do not access or store your payment details.</p>
+
+      <h2>Data Retention & Deletion</h2>
+      <p>You control your data. Deleting the app removes locally stored data. If you used iCloud, you can delete synced data from iCloud settings.</p>
+
+      <h2>Children’s Privacy</h2>
+      <p>NotaFlow is rated 4+ and does not knowingly collect personal data from children.</p>
+
+      <h2>Your Rights</h2>
+      <p>You may at any time export or delete your notes within the app (if features are provided) or remove the app to delete local data. For any privacy request, contact us.</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:antuar7@hotmail.it">antuar7@hotmail.it</a></p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Policy to reflect app or legal changes. The “Effective” date above indicates the latest revision.</p>
+    </section>
+
+    <!-- ITALIANO -->
+    <section id="section-it" class="lang card" lang="it">
+      <p>In <strong>NotaFlow</strong> rispettiamo la tua privacy e progettiamo l’app per ridurre al minimo il trattamento dei dati.</p>
+
+      <h2>Raccolta dei dati</h2>
+      <p>L’app non raccoglie, trasmette o vende dati personali a terze parti. Le tue note e i promemoria sono archiviati in locale sul dispositivo. Se abiliti la sincronizzazione iCloud, i dati sono conservati nel tuo account iCloud personale secondo i termini di Apple.</p>
+
+      <h2>Analitiche e tracciamento</h2>
+      <p>Non usiamo sistemi di analisi di terze parti, SDK pubblicitari o tecnologie di tracciamento.</p>
+
+      <h2>Abbonamenti e acquisti</h2>
+      <p>I pagamenti e gli abbonamenti sono gestiti da Apple tramite acquisti in-app. Non abbiamo accesso né memorizziamo i tuoi dati di pagamento.</p>
+
+      <h2>Conservazione e cancellazione dei dati</h2>
+      <p>Hai il pieno controllo dei tuoi dati. Disinstallando l’app rimuovi i dati archiviati in locale. Se hai utilizzato iCloud, puoi eliminare i dati sincronizzati dalle impostazioni di iCloud.</p>
+
+      <h2>Privacy dei minori</h2>
+      <p>NotaFlow è classificata 4+ e non raccoglie consapevolmente dati personali di minori.</p>
+
+      <h2>I tuoi diritti</h2>
+      <p>Puoi in qualsiasi momento esportare o eliminare le note dall’app (se presenti funzioni dedicate) oppure rimuovere l’app per cancellare i dati locali. Per richieste sulla privacy, contattaci.</p>
+
+      <h2>Contatti</h2>
+      <p>Email: <a href="mailto:antuar7@hotmail.it">antuar7@hotmail.it</a></p>
+
+      <h2>Modifiche alla presente Informativa</h2>
+      <p>Potremmo aggiornare l’Informativa per riflettere cambiamenti dell’app o normativi. La data “di entrata in vigore” sopra indica l’ultima revisione.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> NotaFlow. This page is provided for transparency and to assist App Review.
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const btnEn = document.getElementById('btn-en');
+      const btnIt = document.getElementById('btn-it');
+      const secEn = document.getElementById('section-en');
+      const secIt = document.getElementById('section-it');
+      const setLang = (lang) => {
+        const en = lang === 'en';
+        secEn.classList.toggle('visible', en);
+        secIt.classList.toggle('visible', !en);
+        btnEn.classList.toggle('active', en);
+        btnEn.setAttribute('aria-selected', String(en));
+        btnIt.classList.toggle('active', !en);
+        btnIt.setAttribute('aria-selected', String(!en));
+        document.documentElement.lang = en ? 'en' : 'it';
+        try { localStorage.setItem('notaflow-pp-lang', en ? 'en' : 'it'); } catch(e){}
+      };
+      btnEn.addEventListener('click', () => setLang('en'));
+      btnIt.addEventListener('click', () => setLang('it'));
+
+      // Persist preferred language
+      try {
+        const saved = localStorage.getItem('notaflow-pp-lang');
+        if (saved === 'it') setLang('it');
+        else setLang('en');
+      } catch(e){ setLang('en'); }
+
+      // Year + effective date (keep the one you wrote above or compute today)
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // If you want to auto-set today, uncomment next line and remove the static date in HTML:
+      // document.getElementById('eff-date').textContent = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+    })();
+  </script>
 </body>
 </html>
+
